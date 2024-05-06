@@ -1,0 +1,13 @@
+SHOW DATABASES;
+CREATE database sample;
+USE sample;
+
+create table login(username varchar(20), password varchar(20));
+
+insert into login values('admin','12345');
+
+select * from login;
+
+create table Info(id int NOT NULL auto_increment ,dates varchar(10) NOT NULL, dow varchar(10), Timein_am varchar(10), Timeout_am varchar(10), Timein_pm varchar(10), Timeout_pm varchar(10), Worked_hours int, task varchar(100), PRIMARY KEY(id));
+select * from Info;
+drop table Info;
